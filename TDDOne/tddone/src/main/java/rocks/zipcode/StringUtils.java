@@ -31,9 +31,16 @@ public class StringUtils {
     }
     
     public static boolean isPalindrome(String str) {
-        // Your implementation here
-        // Note: Ignoring case and non-alphanumeric characters
-        return false;
+        String minusPunc = str.replaceAll(",","" );
+        String minusAll = minusPunc.replaceAll(":","");
+        String paramMinusPunc=str.replaceAll(",","");
+        String paramMinusAll= paramMinusPunc.replaceAll(" ","");
+        StringBuilder sb = new StringBuilder(minusAll);
+        StringBuilder reversed =sb.reverse();
+        if(reversed.equals(str)){
+//            System.out.println( str +" is a palindrome");
+        }    return reversed.toString().toLowerCase().equals(paramMinusAll);
+
     }
 }
 
