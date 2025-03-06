@@ -14,13 +14,20 @@ public class StringUtils {
     // TODO: Implement the following methods to make the tests pass
     
     public static String reverse(String str) {
-        // Your implementation here
-        return null;
+        StringBuilder sb = new StringBuilder(str);
+         sb.reverse();
+    return sb.toString();
     }
     
     public static int countOccurrences(String str, char c) {
-        // Your implementation here
-        return 0;
+        int count = 0;
+        for( int i = 0; i<str.length(); i++){
+            if(str.charAt(i)==c) {
+                count++;
+            }
+
+        }
+        return count;
     }
     
     public static boolean isPalindrome(String str) {
