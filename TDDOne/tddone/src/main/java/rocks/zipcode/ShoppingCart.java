@@ -45,10 +45,12 @@ public class ShoppingCart {
     }
     
     public double getTaxAmount() {
+
         return getSubtotal() * taxRate;
     }
     
     public double getTotal() {
+
         return getSubtotal() + getTaxAmount();
     }
     
@@ -90,7 +92,8 @@ public class ShoppingCart {
             if (quantity <= 0) {
                 throw new IllegalArgumentException("Quantity must be positive");
             }
-            this.quantity = quantity;
         }
+
+
     }
 }
