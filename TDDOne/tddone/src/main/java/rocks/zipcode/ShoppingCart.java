@@ -20,14 +20,17 @@ public class ShoppingCart {
     }
     
     public void addItem(Item item) {
+
         items.add(item);
     }
     
     public void removeItem(Item item) {
+
         items.remove(item);
     }
     
     public int getItemCount() {
+
         return items.size();
     }
     
@@ -70,7 +73,7 @@ public class ShoppingCart {
         }
         
         public String getName() {
-            return name;
+            return this.name;
         }
         
         public double getPrice() {

@@ -4,6 +4,7 @@ public class EmailService {
     private final rocks.zipcode.EmailSender emailSender;
     
     public EmailService(rocks.zipcode.EmailSender emailSender) {
+
         this.emailSender = emailSender;
     }
     

@@ -13,4 +13,9 @@ class ShoppingCartTest {
     // - Calculating subtotal, tax, and total
     // - Edge cases like an empty cart
     // - Invalid inputs (e.g., negative prices, zero quantity)
+    @Test
+
+    public void testAddItem_ShouldAddOneItemToTheList(){}
+
+
 }

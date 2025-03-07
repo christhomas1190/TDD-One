@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 // Write this test class using a mock for EmailSender
 
-public class EmailServiceTest {
+public class EmailServiceTest {}
 
     /**
      * IGNORE THIS ONE. DON'T BOTHER.
@@ -16,4 +16,3 @@ public class EmailServiceTest {
     // - Check that invalid emails are rejected
     // - Test edge cases
     // - Verify the behavior when the EmailSender succeeds or fails
-}
