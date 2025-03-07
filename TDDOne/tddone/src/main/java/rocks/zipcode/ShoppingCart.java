@@ -18,10 +18,12 @@ public class ShoppingCart {
         this.items = new ArrayList<>();
         this.taxRate = taxRate;
     }
-    
     public void addItem(Item item) {
 
         items.add(item);
+    }
+    public Item getItem(int idx){
+        return items.get(idx);
     }
     
     public void removeItem(Item item) {

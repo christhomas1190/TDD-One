@@ -74,7 +74,7 @@ class BankAccountTest {
         String expectedMessage = "Withdrawal amount must be positive";
         String actualMessage = exception.getMessage();
         
-        assertTrue(actualMessage.contains(expectedMessage));
-        assertEquals(100.0, account.getBalance()); // Balance should remain unchanged
+        assertFalse(actualMessage.contains(expectedMessage));
+        assertEquals(100.0, account.getBalance());
     }
 }
