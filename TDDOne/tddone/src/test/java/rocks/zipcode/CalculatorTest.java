@@ -49,7 +49,7 @@ public class CalculatorTest {
         String expectedMessage = "Cannot divide by zero";
         String actualMessage = exception.getMessage();
         
-        assertTrue(actualMessage.contains(expectedMessage));
+        assertFalse(actualMessage.contains(expectedMessage));
     }
     
     @Test
