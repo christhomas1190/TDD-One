@@ -13,19 +13,19 @@ public class PasswordValidatorTest {
        this.passwordTests = new PasswordValidator();
 
     }
-    @Test
-        public void isPasswaordValid(){
-        setUp();
-        boolean expected=true;
-        boolean actual = passwordTests.isValid("Hereisthepassword1!");
 
-        assertEquals(expected,actual);
-    }@Test
+    @Test
         public void isPasswaordValid2(){
         setUp();
         boolean expected=true;
         boolean actual = passwordTests.isValid("Hereisthepassword1!");
-
         assertEquals(expected,actual);
+        assertTrue(passwordTests.isValid("jkasdhWksd?u1"));
+        assertTrue(passwordTests.isValid("uiydiqsuAhbk1!"));
+        assertFalse(passwordTests.isValid("sd"));
+        assertFalse(passwordTests.isValid("Hayso!!"));
+        assertFalse(passwordTests.isValid(null));
+        assertFalse(passwordTests.isValid("ALLCAPSNONUMBERS"));
+        assertFalse(passwordTests.isValid(""));
     }
 }
